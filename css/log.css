@@ -1,0 +1,90 @@
+@import url("normalize.min.css");
+@import url("milligram.min.css");
+@import url("custom.css");
+:root{
+    --color:#141516;
+    --color-body: #f0f1f3;
+    --color-content:#fff;
+    --color-head: #12171f;
+    --color-head-letter: #fff;
+}
+*, body{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: var(--color-body);
+}
+a{
+    text-decoration: none;
+    color: var(--color);
+}
+/*------header
+---------------------------------*/
+header{
+    background-color: var(--color-head);
+    width: 100%;
+}
+.head-brand h3{
+    align-self: center;
+    margin: 5px 5px 5px 5px;
+    padding: 5px 10px 5px 10px;
+    cursor: pointer;
+    font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--color-head-letter);
+}
+.g-col-1-2{
+    grid-area: 1/1/10/3;
+}
+.g-col-1-3{
+    grid-area: 1/3/10/9;
+}
+.g-col-3-12{
+    grid-area: 1/9/10/25;
+}
+.nav-left{
+    align-self: center;
+    position: relative;
+}
+.nav-left .drop{
+    color: var(--color-head-letter);
+    margin: 5px 0px 5px 0px;
+    padding: 10px 10px 10px 10px;
+}
+.nav-left a svg, .nav-left .drop svg{
+    width: 20px;
+    height: 20px;
+}
+.nav-left .brg{
+    margin: 0px;
+    margin: 5px 0px 0px 0px;
+    padding: 10px 10px 5px 10px;
+}
+.nav-left .brg svg{
+    width: 30px;
+    height: 30px;
+}
+.nav-left a sub, .nav-left .drop sub{
+    position: relative;
+    top: -15px;
+    left: -8px;
+    font-size: 12px;
+    padding: 3px;
+    z-index: 1;
+    background-color: var(--color-head);
+}
+.small-drop{
+    background-color: var(--color-head);
+    z-index: 99;
+    right: 0%;
+}
+.drop-item{
+    display: none;
+}
+.drop-down:hover .drop-item{
+    display: block;
+}
+/*---header clouse
+---------------------------------*/

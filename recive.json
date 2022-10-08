@@ -1,0 +1,8 @@
+[
+    {
+        "name": "local test",
+        "email": "local@email.com",
+        "password":"password1122",
+        "age":20
+    }
+]
